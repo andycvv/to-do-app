@@ -1,0 +1,61 @@
+input,
+textarea {
+  width: 100%;
+  border-radius: 15px;
+  height: 48px;
+  background-color: #ffffff20;
+  border: none;
+  padding: 0 15px 0 15px;
+  color: white;
+  outline: none;
+}
+
+.grid-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.input-description {
+  height: 100px;
+  font-family: system-ui;
+  padding-top: 15px;
+  resize: none;
+  font-size: 1.1rem;
+}
+
+.button-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-button {
+  font-size: 1.1rem;
+  font-family: system-ui;
+  padding: 13px 60px;
+  border-radius: 15px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--color-inputs);
+  color: var(--color-content);
+  transition: background-color .3s;
+}

@@ -1,0 +1,42 @@
+.toggle-div {
+  height: 49px;
+  width: 100px;
+  background-color: var(--color-inputs);
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-content);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  transform: translateX(0%);
+  transition: all .4s;
+}
+
+.toggle .moon-icon {
+  display: none;
+}
+
+.toggle.toggle-moon {
+  transform: translateX(120%);
+}
+
+.toggle.toggle-moon .sun-icon {
+  display: none;
+}
+
+.toggle.toggle-moon .moon-icon {
+  display: block;
+}

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-inputs: #188C94;
+  --color-content: #AEF5FA;
+  --color-h2: #AEF5FA;
+  --color-icons: #AEF5FA;
+  --color-div-icons: #188C94;
+}
+
+body, html {
+  color: white;
+  font-family: system-ui;
+}
+
+body.dark-theme {
+  --color-inputs: #EEB3F8;
+  --color-content: #6F1580;
+  --color-h2: #EEB3F8;
+  --color-icons: #EEB3F8;
+  --color-div-icons: #630073;
+}
+
+h1 {
+  color: var(--color-h2);
+  transition: color .3s;
+}

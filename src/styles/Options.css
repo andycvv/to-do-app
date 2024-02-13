@@ -1,0 +1,10 @@
+.option {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-div-icons);
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.grid-item-big {
+  display: flex;
+  max-height: 700px;
+}
+
+.div-tareas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  scroll-behavior: smooth;
+  padding-right: 10px;
+  overflow: auto;
+}
+
+.div-tareas::-webkit-scrollbar {
+  width: 10px;
+}
+
+.div-tareas::-webkit-scrollbar-track {
+  background: none; 
+}
+
+.div-tareas::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.div-tareas::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
