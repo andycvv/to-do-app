@@ -1,18 +1,21 @@
-.container {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+body {
   background: url(./assets/background-light.jpg) no-repeat center;
   background-size: cover;
+  transition: background .3s;
+}
+
+.container {
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  transition: all .3s;
 }
 
-body.dark-theme .container {
+body.dark-theme {
   background: url(./assets/background-dark.jpg) no-repeat center;
   background-size: cover;
 }
@@ -29,9 +32,8 @@ h2 {
 
 .grid {
   display: grid;
-  width: 985px;
+  width: 90%;
   max-width: 985px;
-  min-height: 700px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
@@ -52,4 +54,24 @@ h2 {
 .grid-item-big {
   grid-row: 1/3;
   grid-column: 2/2;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .grid-item-big {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  h3 {
+    font-size: 1em;
+  }
+  .input-description{
+    height: 130px;
+  }
 }
