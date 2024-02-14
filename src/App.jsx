@@ -57,7 +57,7 @@ export function App () {
 
   return (
     <div className='container'>
-      <h1>TO DO APP</h1>
+      <h1>To-Do App</h1>
       <div className='grid'>
         <AddTareas agregarTareas={agregarTareas} tareas={tareas} selectTheme={selectTheme} theme={theme} />
         <TareasContenedor tareas={tareas} agregarTareasCompletadas={agregarTareasCompletadas} completarTarea={completarTarea} />
