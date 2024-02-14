@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../styles/AddTareas.css'
 import { Toggle } from './Toggle'
 
-export function AddTareas ({ agregarTareas, tareas }) {
+export function AddTareas ({ agregarTareas, tareas, selectTheme, theme }) {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
 
@@ -51,7 +51,7 @@ export function AddTareas ({ agregarTareas, tareas }) {
         </div>
         <div className='button-toggle'>
           <button className='add-button'>Añadir</button>
-          <Toggle />
+          <Toggle selectTheme={selectTheme} theme={theme} />
         </div>
       </form>
     </div>

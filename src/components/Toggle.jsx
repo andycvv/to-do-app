@@ -1,10 +1,24 @@
+import { useEffect } from 'react'
 import '../styles/Toggle.css'
 
-export function Toggle () {
+export function Toggle ({ selectTheme, theme }) {
   const handleToggle = (e) => {
     e.currentTarget.classList.toggle('toggle-moon')
     document.querySelector('body').classList.toggle('dark-theme')
+    if (theme) {
+      selectTheme(false)
+    } else {
+      selectTheme(true)
+    }
   }
+
+  useEffect(() => {
+    if (theme) {
+      document.querySelector('.toggle').classList.add('toggle-moon')
+    } else {
+      document.querySelector('.toggle').classList.remove('toggle-moon')
+    }
+  }, [])
 
   return (
     <div className='toggle-div'>
